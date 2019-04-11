@@ -21,7 +21,7 @@
 			console.log(secondsDegrees);
 			const secondHand = document.getElementsByClassName('second-hand')[0];
 			const hands = document.getElementsByClassName('hand');
-			if (seconds == 0) {
+			if (seconds == 0) { // solution to transition issue at 60s mark
 				secondHand.style.transition = "all 0s";
 			} else {
 				secondHand.style.transition = "all 0.5s";
